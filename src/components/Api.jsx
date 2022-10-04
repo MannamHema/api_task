@@ -8,7 +8,7 @@ function Api() {
     const [data, setData] = useState([]);
 
     const getData = () => {
-        axios.get('http://api.coinstats.app/public/v1/coins?skip=0&limit=100&currency=INR')
+        axios.get('https://api.coinstats.app/public/v1/coins?skip=0&limit=100&currency=INR')
         .then((res) => {
             console.log(res.data.coins)
             setData(res.data.coins);
